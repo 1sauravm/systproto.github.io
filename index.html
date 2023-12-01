@@ -6,50 +6,38 @@
 </head>
 <body>
     <div id="app">
-        <!-- Destination Setting -->
-        <div class="section">
-            <label for="destination">Set Destination:</label>
-            <input type="text" id="destination" value="123 HCI Road, Scienceville, MD" readonly>
+        <!-- Navigation -->
+        <div id="navbar">
+            <button onclick="navigate('home')">Home</button>
+            <button onclick="navigate('music')">Music Control</button>
+            <button onclick="navigate('temperature')">Temperature Control</button>
+            <button onclick="navigate('lock')">Lock/Unlock</button>
+            <button onclick="navigate('trunk')">Trunk</button>
         </div>
 
-        <!-- Music Source Selection -->
-        <div class="section">
-            <label>Select Music Source:</label>
-            <button id="radio">Radio</button>
-            <button id="phone">Phone</button>
-            <button id="cd">CD</button>
+        <!-- Home Page -->
+        <div class="page" id="home">
+            <h2>Welcome to Car Control App</h2>
         </div>
 
-        <!-- Music Volume Control -->
-        <div class="section">
-            <label>Music Volume:</label>
-            <button onclick="changeVolume(-1)">-</button>
-            <span id="volume">5</span>
-            <button onclick="changeVolume(1)">+</button>
+        <!-- Music Control Page -->
+        <div class="page" id="music" style="display:none;">
+            <!-- Music Source and Volume Control... -->
         </div>
 
-        <!-- Temperature and Fan Control -->
-        <div class="section">
-            <label>Driver Side Temperature:</label>
-            <button onclick="changeTemperature('driver', -1)">-</button>
-            <span id="driverTemp">20°C</span>
-            <button onclick="changeTemperature('driver', 1)">+</button>
-
-            <label>Passenger Side Temperature:</label>
-            <button onclick="changeTemperature('passenger', -1)">-</button>
-            <span id="passengerTemp">20°C</span>
-            <button onclick="changeTemperature('passenger', 1)">+</button>
+        <!-- Temperature Control Page -->
+        <div class="page" id="temperature" style="display:none;">
+            <!-- Temperature and Fan Control... -->
         </div>
 
-        <!-- Vehicle Lock Control -->
-        <div class="section">
-            <button id="lock">Lock Vehicle</button>
-            <button id="unlock">Unlock Vehicle</button>
+        <!-- Lock/Unlock Page -->
+        <div class="page" id="lock" style="display:none;">
+            <!-- Vehicle Lock Control... -->
         </div>
 
-        <!-- Trunk Control -->
-        <div class="section">
-            <button id="trunk">Open Trunk</button>
+        <!-- Trunk Page -->
+        <div class="page" id="trunk" style="display:none;">
+            <!-- Trunk Control... -->
         </div>
     </div>
     <script src="script.js"></script>
