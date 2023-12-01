@@ -1,3 +1,3 @@
 testing code
 
-live link: https://github.com/1sauravm/systproto.github.io.git
+live link: https://1sauravm.github.io/systproto.github.io/
