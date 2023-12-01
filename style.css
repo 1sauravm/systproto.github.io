@@ -1,0 +1,15 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+#app {
+    width: 300px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.section {
+    margin-bottom: 15px;
+}
