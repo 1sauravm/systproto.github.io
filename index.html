@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Car Control App</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <!-- Destination Setting -->
+        <div class="section">
+            <label for="destination">Set Destination:</label>
+            <input type="text" id="destination" value="123 HCI Road, Scienceville, MD" readonly>
+        </div>
+
+        <!-- Music Source Selection -->
+        <div class="section">
+            <label>Select Music Source:</label>
+            <button id="radio">Radio</button>
+            <button id="phone">Phone</button>
+            <button id="cd">CD</button>
+        </div>
+
+        <!-- Music Volume Control -->
+        <div class="section">
+            <label>Music Volume:</label>
+            <button onclick="changeVolume(-1)">-</button>
+            <span id="volume">5</span>
+            <button onclick="changeVolume(1)">+</button>
+        </div>
+
+        <!-- Temperature and Fan Control -->
+        <div class="section">
+            <label>Driver Side Temperature:</label>
+            <button onclick="changeTemperature('driver', -1)">-</button>
+            <span id="driverTemp">20°C</span>
+            <button onclick="changeTemperature('driver', 1)">+</button>
+
+            <label>Passenger Side Temperature:</label>
+            <button onclick="changeTemperature('passenger', -1)">-</button>
+            <span id="passengerTemp">20°C</span>
+            <button onclick="changeTemperature('passenger', 1)">+</button>
+        </div>
+
+        <!-- Vehicle Lock Control -->
+        <div class="section">
+            <button id="lock">Lock Vehicle</button>
+            <button id="unlock">Unlock Vehicle</button>
+        </div>
+
+        <!-- Trunk Control -->
+        <div class="section">
+            <button id="trunk">Open Trunk</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
